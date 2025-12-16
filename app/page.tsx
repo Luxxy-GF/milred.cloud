@@ -8,10 +8,16 @@ export default function Home() {
       <main className="flex flex-col items-center text-center space-y-8 max-w-4xl mx-auto w-full">
 
         {/* Main Title Section */}
-        <div className="space-y-4 animate-in fade-in zoom-in duration-1000">
-          <h1 className="text-6xl md:text-8xl font-extrabold tracking-tighter bg-gradient-to-b from-white to-neutral-400 text-transparent bg-clip-text drop-shadow-sm">
-            milred.cloud
-          </h1>
+        <div className="space-y-8 animate-in fade-in zoom-in duration-1000 flex flex-col items-center">
+          <div className="relative w-64 h-64 md:w-80 md:h-80 drop-shadow-[0_0_50px_rgba(220,38,38,0.5)]">
+            <Image
+              src="/milred-cloud.png"
+              alt="Milred Cloud"
+              fill
+              className="object-contain"
+              priority
+            />
+          </div>
           <p className="text-2xl md:text-3xl font-light text-muted-foreground tracking-[0.2em] uppercase">
             Coming Soon
           </p>
